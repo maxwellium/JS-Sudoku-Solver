@@ -1,0 +1,115 @@
+.sudoku div,
+.sudoku input[type="text"] {
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+  float: left;
+  clear: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  outline: none;
+  border: none;
+  display: block;
+}
+.sudoku.corrupt > div.inputs input {
+  color: #f00;
+}
+
+.sudoku > div {
+  margin-right: 15px;
+}
+
+.sudoku div.cell,
+.sudoku div.square {
+  height: 36px;
+  width: 36px;
+  padding: 3px;
+}
+.sudoku div.row {
+  height: 12px;
+}
+.sudoku div.column {
+  width: 12px;
+}
+
+.sudoku div.number {
+  height: 12px;
+  width: 12px;
+}
+
+.sudoku input[type="text"] {
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.sudoku textarea {
+  border: none;
+  padding: 0px;
+  margin-left: 15px;
+  outline: none;
+  float: left;
+  display: block;
+}
+
+.sudoku div.cell[column="0"],
+.sudoku div.square[column="0"],
+.sudoku div.input[column="0"],
+.sudoku div.row[row="1"],
+.sudoku div.row[row="2"],
+.sudoku div.row[row="3"],
+.sudoku div.row[row="4"],
+.sudoku div.row[row="5"],
+.sudoku div.row[row="6"],
+.sudoku div.row[row="7"],
+.sudoku div.row[row="8"],
+.sudoku div.column div.number,
+.sudoku div.inputs div#info {
+  clear: left;
+}
+
+.sudoku div.cell[column="2"],
+.sudoku div.cell[column="5"],
+.sudoku div.square[column="0"],
+.sudoku div.square[column="1"],
+.sudoku div.input[column="2"],
+.sudoku div.input[column="5"] {
+  border-right: 1px solid #000;
+}
+
+.sudoku div.cell[column="3"],
+.sudoku div.cell[column="6"],
+.sudoku div.square[column="1"],
+.sudoku div.square[column="2"],
+.sudoku div.input[column="3"],
+.sudoku div.input[column="6"],
+.sudoku div.column {
+  border-left: 1px solid #000;
+}
+
+.sudoku div.column:first-child {
+  border: none;
+}
+
+.sudoku div.cell[row="2"],
+.sudoku div.cell[row="5"],
+.sudoku div.square[row="0"],
+.sudoku div.square[row="1"],
+.sudoku div.input[row="2"],
+.sudoku div.input[row="5"] {
+  border-bottom: 1px solid #000;
+}
+
+.sudoku div.cell[row="3"],
+.sudoku div.cell[row="6"],
+.sudoku div.square[row="1"],
+.sudoku div.square[row="2"],
+.sudoku div.input[row="3"],
+.sudoku div.input[row="6"],
+.sudoku div.row {
+  border-top: 1px solid #000;
+}
+
+.sudoku div.row:first-child {
+  border: none;
+}
