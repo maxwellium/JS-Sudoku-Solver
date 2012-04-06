@@ -1,0 +1,10 @@
+Sudoku Solver
+=============
+
+This is a quick and dirty Sudoku solver, using table scans and elimination of duplicates.
+
+Usage
+-----
+
+Simply enter values into the input fields. Press enter to do tablescan, escape to run full calculation.
+The textarea is for easy import export of values.
